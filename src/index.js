@@ -1,17 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Header from './components/Header';
+import Info from './components/Info';
+import Tutors from './components/Tutors';
+import Form from './components/Form';
+import Footer from './components/Footer';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Header/>,
+  document.getElementById('header')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+ReactDOM.render(
+  <Info/>,
+  document.getElementById('info')
+);
+
+ReactDOM.render(
+  <Tutors/>,
+  document.getElementById('tutors')
+)
+
+ReactDOM.render(
+  <Form/>,
+  document.getElementById('form')
+);
+
+ReactDOM.render(
+  <Footer/>,
+  document.getElementById('footer')
+);

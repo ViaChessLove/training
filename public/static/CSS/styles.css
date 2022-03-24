@@ -1,0 +1,951 @@
+*{
+        margin: 0;
+        padding: 0;
+
+        
+}
+
+a{
+        text-decoration: none;
+        
+}
+
+a:visited{
+        color: #000000;
+}
+
+li{
+        list-style-type: none;
+        margin-top: 20px;
+}
+
+.last{
+        margin-bottom: 20px;
+}
+
+nav{
+        text-align: center;
+}
+.text{
+        font-family: 'Podkova'; font-style: normal;
+        font-weight: normal;    
+        font-size: 30px;
+}
+
+.wrapper {
+        max-width: 1300px;
+        min-width: 1100px;
+        margin: 0 auto;
+
+        background: linear-gradient(270.03deg, #F81C44 11.61%, #3F96FC 22.93%, #FFFFFF 29.53%);
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgb(0, 0, 0);
+        border-radius: 10px;
+        opacity: 0.95;
+}
+
+/*header*/
+.contentHeader{
+        padding-right: 20px;
+}
+.header{
+        width: 100%;
+        
+
+        margin-bottom: 20px;
+}
+
+.contentHeader{
+        display: flex;
+        justify-content: space-between;
+}
+.sideLeft{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.logo{
+        padding-left: 20px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-right: 20px;
+}
+
+.headerText{
+       padding-top: 15px; 
+       width: 400px;
+}
+
+/*burger*/
+.sideLeft{
+        padding-right: 20px;
+}
+
+#burger{
+        display: none;
+}
+
+.burgerImg{
+        color: #FFFFFF;
+        font-size: 70px;
+}
+
+[for=burger]{
+        display: block;
+        
+        text-align: center;
+        
+    }
+[for=burger]::before{
+        content: '☰';
+}
+    nav{
+        max-width: 1300px;
+        margin: 0 auto;
+        display: none;
+        width: 100%;
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+        margin-top: 120px;
+        background: #FFFFFF;
+        max-width: 1000;
+        user-select: none;
+    }
+    #burger:checked + label + nav{
+        display: block;
+        animation: show .5s ease;
+    }
+    #burger:checked +[for=burger]::before{
+        content: '⮾';
+    }
+
+/*info*/
+
+.info{
+        max-width: 1200px;
+        margin: 0 auto;
+
+        background: linear-gradient(1.2deg, rgba(248, 28, 68, 0.68) 2%, rgba(63, 150, 252, 0.42) 11.04%, #FFFFFF 27.56%);
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        margin-bottom: 20px;
+}
+
+.inputForm{
+        max-width: 1000px;
+        margin: 0 auto;
+
+        background: linear-gradient(1.2deg, rgba(248, 28, 68, 0.68) 2.97%, rgba(63, 150, 252, 0.42) 12.01%, #FFFFFF 28.53%);
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+}
+
+.formTiltle{
+        font-family: 'Podkova'; font-style: normal;
+        font-weight: normal;    
+        font-size: 30px;
+}
+
+.infoContent{
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+}
+
+.infoText{
+        margin-bottom: 20px;    
+}
+/*tutors*/
+#tutors{
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.tutor{
+        max-width: 580px;
+
+        background: linear-gradient(180deg, #FFFFFF 81.56%, rgba(63, 150, 252, 0.611458) 89.9%, rgba(248, 28, 68, 0.73) 95.62%), linear-gradient(180deg, #FFFFFF 81.56%, rgba(63, 150, 252, 0.611458) 89.9%, rgba(248, 28, 68, 0.73) 95.62%), linear-gradient(180deg, #FFFFFF 81.56%, rgba(63, 150, 252, 0.611458) 89.9%, rgba(248, 28, 68, 0.73) 95.62%);
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-bottom: 20px;
+}
+
+.second{
+        margin-left: 40px;
+}
+
+.tutorsWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+}
+
+.tutorsWrapper img{
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-right: 20px;
+}
+
+.tutorsWrapper div{
+        margin-top: 20px;
+}
+
+.tutorInfo{
+        width: 250px;
+        
+
+        background: #FFFFFF;
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+}
+
+.tutorInfo h1{
+        font-size: 24px;
+        text-align: center;
+}
+
+.tutorInfo div{
+        font-size: 20px;
+}
+
+.textTutor{
+        padding-left: 20px;
+        padding-right: 15px;
+}
+
+.fees{
+        padding-left: 20px;
+        padding-top: 8px;
+
+        font-family: 'Podkova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        
+        color: #3F96FC;  
+}
+
+.pleaseFillForm{
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+
+        font-size: 28px;
+}
+
+.formTutors{
+        padding-left: 20px;
+}
+
+.formTutors .formButton{
+        margin-left: 150px;
+}
+/*form*/
+
+.form{
+        max-width: 1200px;
+        min-width: 1000px;
+        margin: 0 auto;
+
+        background: linear-gradient(1.2deg, rgba(248, 28, 68, 0.68) 2.97%, rgba(63, 150, 252, 0.42) 12.01%, #FFFFFF 28.53%);
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        margin-bottom: 20px;
+}
+
+.formText{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+}
+
+.inputForm{
+        margin-bottom: 50px;
+}
+
+.formTitle{
+        padding-top: 80px;
+        text-align: center;
+        font-size: 24px;
+
+        margin-bottom: 20px;
+}
+
+.questioning{
+        text-align: center;
+}
+
+.formInput{
+        min-width: 540px;
+        min-height: 27px;
+
+        background: #C1BEBE;
+        border: 1px solid #000000;
+        border-radius: 10px;
+
+        margin-bottom: 20px;
+}
+
+input[placeholder="Введите имя"]{
+        padding-left: 5px;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-size: 20px;    
+}
+
+input[placeholder="Введите ваш e-mail адрес"]{
+        padding-left: 5px;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-size: 20px;    
+}
+
+input[placeholder="Введите номер телефона"]{
+        padding-left: 5px;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-size: 20px;    
+}
+
+input[placeholder="Введите вашу специализацию"]{
+        padding-left: 5px;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-size: 20px;    
+}
+
+input[placeholder="Введите опыт вашей работы (полных лет)"]{
+        padding-left: 5px;
+        font-family: 'Podkova';
+        font-style: normal;
+        font-size: 20px;    
+}
+
+.formButton{
+        min-width: 200px;
+        min-height: 50px;
+        background: linear-gradient(180deg, #FFFFFF 14.9%, rgba(63, 150, 252, 0.538542) 51.86%, rgba(252, 150, 169, 0.538542) 51.87%, rgba(248, 28, 68, 0) 100%);
+        border: 5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+
+        
+
+        margin-bottom: 80px;
+}
+
+.formButton:hover{
+        cursor: pointer;
+}
+
+input[value="Отправить заявку"]{
+        font-family: 'Podkova';
+        font-style: normal;
+        font-size: 20px;
+}
+
+.afterFormText{
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 50px;
+
+        font-size: 24px;
+
+        color: #3D3636;
+
+}
+
+/*footer*/
+
+.footer{
+        height: 100px;
+}
+
+.footerText{
+        padding-left:10%;
+
+        color: #857E7E;
+        font-weight: 80%;
+        font-size: 24px;
+}
+/*adaptive*/
+/*Extra*/
+@media screen and (max-width: 1200px){
+        .wrapper{
+                max-width: 1100px;
+                min-width: 900px;
+        }
+
+        .info{
+                max-width: 1000px;
+        }
+
+        #tutors{
+                max-width: 1000px;
+        }
+
+        .tutor{
+                max-width: 490px;
+                min-width: 401px;
+        }
+
+        .second{
+                margin-left: 20px;
+        }
+
+        .tutorsWrapper img{
+                padding-left: 10px;
+                padding-top: 10px;
+                margin-right: 10px;
+                max-width: 220px;
+                max-height: 377px;
+        }
+
+        .tutorsWrapper div{
+                margin-top: 15px;
+        }
+
+        .tutorInfo{
+                max-width: 239px;
+        }
+        
+        .pleaseFillForm{
+                padding-left: 10px;
+        }
+
+        .textTutor{
+                padding-left: 18px;
+                padding-right: 13px;
+        }
+
+        .fees{
+                max-width: 469px;
+                padding-left: 10px;
+        }
+
+        .formTutors{
+                padding-left: 10px;
+        }
+
+        .formTutors .formButton{
+                margin-left: 125px;
+        }
+
+        .form{
+                max-width: 1000px;
+        }
+
+        .formInput{
+                min-width: 450px;
+                max-width: 450px;
+        }
+
+        .inputForm{
+                max-width: 900px;
+        }
+}
+
+/*Large*/
+
+@media screen and (max-width: 990px){
+        .wrapper{
+                max-width: 750px;
+                min-width: 750px;
+        }
+
+        .info{
+                max-width: 750px;
+        }
+
+        .burgerImg{
+                font-size: 60px;
+        }
+
+        #tutors{
+                max-width: 750px;
+        }
+
+        .text{
+                font-size: 26px;
+        }
+
+        .tutor{
+                max-width: 350px;
+                min-width: 300px;
+        }
+
+        .second{
+                margin-left: 50px;
+        }
+
+        .tutorsWrapper img{
+                padding-left: 5px;
+                padding-top: 5px;
+                margin-right: 5px;
+                min-width: 383px;
+                min-height: 295px;
+                max-width: 383px;
+                max-height: 295px;
+        }
+
+        .tutorsWrapper div{
+                margin-top: 15px;
+        }
+
+        .tutorInfo{
+                margin-left: 4px;
+                min-width: 330px;
+                max-width: 330px;
+        }
+        
+        .pleaseFillForm{
+                padding-top: 10px;
+                padding-left: 10px;
+        }
+
+        .textTutor{
+                padding-left: 18px;
+                padding-right: 13px;
+        }
+
+        .fees{
+                max-width: 469px;
+                padding-left: 5px;
+        }
+
+        .formTutors{
+                padding-left: 5px;
+        }
+
+        .formTutors .formButton{
+                margin-left: 70px;
+        }
+
+        .form{
+                max-width: 750px;
+                min-width: 750px;
+        }
+
+        .formInput{
+                min-width: 320px;
+                max-width: 320px;
+        }
+
+        .inputForm{
+                max-width: 600px;
+        }
+}
+
+@media screen and (max-width: 750px){
+        .wrapper{
+                max-width: 580px;
+                min-width: 560px;
+        }
+
+        .headerText{
+                display: none;
+        }
+
+        .info{
+                max-width: 580px;
+        }
+
+        .burgerImg{
+                font-size: 60px;
+        }
+
+        #tutors{
+                max-width: 580px;
+        }
+
+        .text{
+                font-size: 24px;
+        }
+
+        .tutor{
+                max-width: 580px;
+                min-width: 580px;
+        }
+
+        .second{
+                margin-left: 0px;
+        }
+
+        .tutorsWrapper img{
+                padding-left: 90px;
+                padding-top: 5px;
+                margin-right: 5px;
+                min-width: 383px;
+                min-height: 295px;
+                max-width: 383px;
+                max-height: 295px;
+        }
+
+        .tutorsWrapper div{
+                margin-top: 15px;
+        }
+
+        .tutorInfo{
+                margin-left: 4px;
+                min-width: 560px;
+                max-width: 560px;
+        }
+        
+        .pleaseFillForm{
+                padding-top: 10px;
+                padding-left: 10px;
+        }
+
+        .textTutor{
+                padding-left: 18px;
+                padding-right: 13px;
+        }
+
+        .fees{
+                max-width: 469px;
+                padding-left: 5px;
+        }
+
+        .formTutors{
+                padding-left: 5px;
+        }
+
+        .formTutors .formButton{
+                margin-left: 190px;
+        }
+
+        .form{
+                max-width: 580px;
+                min-width: 580px;
+        }
+
+        .formInput{
+                min-width: 540px;
+                max-width: 540px;
+        }
+
+        .inputForm{
+                max-width: 580px;
+        }
+}
+
+@media screen and (max-width: 560px){
+        .wrapper{
+                max-width: 480px;
+                min-width: 320px;
+        }
+
+        .headerText{
+                display: none;
+        }
+
+        .info{
+                max-width: 480px;
+                min-width: 320px;
+        }
+
+        .burgerImg{
+                font-size: 50px;
+        }
+
+        #tutors{
+                max-width: 480px;
+                min-width: 320px;
+        }
+
+        .text{
+                font-size: 22px;
+        }
+
+        .tutor{
+                max-width: 480px;
+                min-width: 320px;
+        }
+
+        .second{
+                margin-left: 0px;
+        }
+
+        .tutorsWrapper img{
+                padding-left: 50px;
+                padding-top: 5px;
+                margin-right: 5px;
+                min-width: 383px;
+                min-height: 295px;
+                max-width: 383px;
+                max-height: 295px;
+        }
+
+        .tutorsWrapper div{
+                margin-top: 15px;
+        }
+
+        .tutorInfo{
+                margin-left: 4px;
+                min-width: 460px;
+        }
+        
+        .pleaseFillForm{
+                padding-top: 10px;
+                padding-left: 10px;
+        }
+
+        .textTutor{
+                padding-left: 18px;
+                padding-right: 13px;
+        }
+
+        .fees{
+                max-width: 469px;
+                padding-left: 5px;
+        }
+
+        .formTutors{
+                padding-left: 5px;
+        }
+
+        .formTutors .formButton{
+                margin-left: 130px;
+        }
+
+        .form{
+                max-width: 480px;
+                min-width: 480px;
+        }
+
+        .formInput{
+                min-width: 380px;
+                max-width: 380px;
+        }
+
+        .inputForm{
+                max-width: 480px;
+        }
+
+        .pleaseFillForm{
+                font-size: 24px;
+        }
+}
+
+
+@media screen and (max-width: 480px){
+        .wrapper{
+                max-width: 400px;
+                min-width: 400px;
+        }
+
+        .headerText{
+                display: none;
+        }
+
+        .info{
+                max-width: 400px;
+                min-width: 400px;
+        }
+
+        .burgerImg{
+                font-size: 50px;
+        }
+
+        #tutors{
+                max-width: 400px;
+                min-width: 300px;
+        }
+
+        .text{
+                font-size: 22px;
+        }
+
+        .tutor{
+                max-width: 400px;
+                min-width: 300px;
+        }
+
+        .second{
+                margin-left: 0px;
+        }
+
+        .tutorsWrapper img{
+                padding-left: 20px;
+                padding-top: 5px;
+                margin-right: 5px;
+                min-width: 383px;
+                min-height: 295px;
+                max-width: 383px;
+                max-height: 295px;
+        }
+
+        .tutorsWrapper div{
+                margin-top: 15px;
+        }
+
+        .tutorInfo{
+                margin-left: 4px;
+                min-width: 380px;
+        }
+        
+        .pleaseFillForm{
+                padding-top: 10px;
+                padding-left: 10px;
+        }
+
+        .textTutor{
+                padding-left: 18px;
+                padding-right: 13px;
+        }
+
+        .fees{
+                max-width: 469px;
+                padding-left: 5px;
+        }
+
+        .formTutors{
+                padding-left: 5px;
+        }
+
+        .formTutors .formButton{
+                margin-left: 95px;
+        }
+
+        .form{
+                max-width: 400px;
+                min-width: 400px;
+        }
+
+        .formInput{
+                min-width: 360px;
+                max-width: 360px;
+        }
+
+        .inputForm{
+                max-width: 380px;
+
+        }
+
+        .pleaseFillForm{
+                font-size: 24px;
+        }
+}
+
+@media screen and (max-width:400px){
+        .wrapper{
+                max-width: 320px;
+                min-width: 320px;
+        }
+
+        .headerText{
+                display: none;
+        }
+
+        .info{
+                max-width: 300px;
+                min-width: 300px;
+        }
+
+        .burgerImg{
+                font-size: 50px;
+        }
+
+        #tutors{
+                max-width: 300px;
+                min-width: 300px;
+        }
+
+        .text{
+                font-size: 18px;
+        }
+
+        .tutor{
+                max-width: 400px;
+                min-width: 300px;
+        }
+
+        .second{
+                margin-left: 0px;
+        }
+
+        .tutorsWrapper img{
+                padding-left: 0px;
+                padding-top: 5px;
+                margin-right: 5px;
+        }
+
+        .tutorsWrapper div{
+                margin-top: 15px;
+        }
+
+        .tutorInfo{
+                margin-left: 4px;
+                min-width: 280px;
+        }
+        
+        .pleaseFillForm{
+                padding-top: 10px;
+                padding-left: 10px;
+        }
+
+        .textTutor{
+                padding-left: 18px;
+                padding-right: 13px;
+        }
+
+        .fees{
+                max-width: 469px;
+                padding-left: 5px;
+        }
+
+        .formTutors{
+                padding-left: 5px;
+        }
+
+        .formTutors .formButton{
+                margin-left: 40px;
+        }
+
+        .form{
+                max-width: 300px;
+                min-width: 300px;
+        }
+
+        .formInput{
+                min-width: 250px;
+                max-width: 250px;
+        }
+
+        .inputForm{
+                max-width: 280px;
+
+        }
+
+        .pleaseFillForm{
+                font-size: 20px;
+        }
+        
+        .afterFormText{
+                display:none;
+        }
+
+        .footerText{
+                font-size: 18px;
+                padding-left: 10px;
+        }
+}
+
+
+
